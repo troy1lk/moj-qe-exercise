@@ -3,10 +3,10 @@ My submission for the MoJ QE exercise.
 I tested the target site (https://automationintesting.online/) using Cypress, leaning on a mix of API and UI checks to keep the overall suite both fast and reliable.
 
 ## What's in the repo
-cypress/e2e/api/api.cy.js                  API tests (rooms + login)
-cypress/e2e/ui/availability_checker.cy.js  Room search on the homepage
-cypress/e2e/ui/login.cy.js                 Admin login page
-cypress/support/                           Commands and setup
+- cypress/e2e/api/api.cy.js                  API tests (rooms + login)
+- cypress/e2e/ui/availability_checker.cy.js  Room search on the homepage
+- cypress/e2e/ui/login.cy.js                 Admin login page
+- cypress/support/                           Commands and setup
 
 ## Setup
 You'll need Node.js.
@@ -26,6 +26,11 @@ npx cypress run --spec cypress/e2e/api/api.cy.js
 npx cypress run --spec cypress/e2e/ui/login.cy.js
 ```
 
+## Allure reports
+```bash
+npm test
+npx allure serve allure-results
+```
 ## What the tests cover
 
 **API** (`api.cy.js`)
