@@ -1,0 +1,21 @@
+{
+  "name": "qe_exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:ui": "cypress run --spec cypress/e2e/*ui.cy.js",
+    "test:api": "cypress run --spec cypress/e2e/api.cy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "allure-commandline": "^2.43.0",
+    "allure-cypress": "^3.10.2",
+    "cypress": "^15.18.0"
+  }
+}
